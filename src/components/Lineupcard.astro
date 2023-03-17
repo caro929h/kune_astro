@@ -1,0 +1,10 @@
+---
+const { title, scene, imgPath } = Astro.props;
+---
+
+<article>
+  {title}
+  {scene}
+  <img src={imgPath} alt="" height="350" width="350" />
+  <slot />
+</article>
