@@ -4,6 +4,7 @@ const data = await response.json;
 
 import Layouts from "../layouts/Layouts.astro";
 import Menu from "../components/Menu.astro";
+import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
@@ -15,32 +16,44 @@ import Menu from "../components/Menu.astro";
     <title>Astro</title>
   </head>
   <header>
-    <nav>
-      <div>
-        <a href="index.html">
-          <img class="logo" src="src/img/kune_logo.png" alt="logo" />
-        </a>
-      </div>
-      <Menu />
-    </nav>
+    <Header />
   </header>
   <body>
-    <h1>Kune</h1><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <h1>Kune</h1><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+    /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+    /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <h1>HEEEEEEJ</h1>
   </body>
 
   <style>
     body {
       margin: 20px;
       padding: 10px;
+      background-color: black;
     }
 
     #logo {
       width: 20%;
     }
+
+    h1 {
+      color: white;
+    }
   </style>
+
 
 </html>

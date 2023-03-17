@@ -1,0 +1,28 @@
+---
+import Menu from "./Menu.astro";
+---
+
+<header>
+  <div class="logo">
+    <a href="../pages/index.astro"> <img class="logo_img" src="src/img/kune_logo.png" alt="" /></a>
+  </div>
+  <div class="main-menu">
+    <Menu />
+  </div>
+</header>
+
+<style>
+  header {
+    align-items: right;
+    padding-right: 2rem;
+  }
+
+  a {
+    display: block;
+    padding-block: 20px;
+  }
+
+  .logo_img {
+    width: 60px;
+  }
+</style>
