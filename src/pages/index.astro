@@ -16,9 +16,9 @@ import Menu from "../components/Menu.astro";
   </head>
   <header>
     <nav>
-      <div class="logo">
+      <div>
         <a href="index.html">
-          <img src="src/img/kune_logo.png" alt="logo" />
+          <img class="logo" src="src/img/kune_logo.png" alt="logo" />
         </a>
       </div>
       <Menu />
@@ -32,7 +32,15 @@ import Menu from "../components/Menu.astro";
     /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   </body>
 
+  <style>
+    body {
+      margin: 20px;
+      padding: 10px;
+    }
 
+    #logo {
+      width: 20%;
+    }
+  </style>
 
-  <style></style>
 </html>
