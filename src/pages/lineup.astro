@@ -1,0 +1,23 @@
+---
+import Lineupcard from "../components/Lineupcard.astro";
+import Footer from "../components/Footer.astro";
+import Menu from "../components/Menu.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <Menu />
+    <main>
+      <h1>Kune Line up</h1>
+      <Lineupcard imgPath="https://api.lorem.space/image/album?w=350&h=350&hash=9D9539E7" title="Parallax Deep" scene="SPACE STAGE" />
+    </main>
+  </body>
+</html>
