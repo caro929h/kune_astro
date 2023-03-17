@@ -4,8 +4,8 @@ const data = await response.json;
 
 import Layouts from "../layouts/Layouts.astro";
 import Menu from "../components/Menu.astro";
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import "../styles/global.css"
 ---
 
 <html lang="en">
@@ -17,23 +17,17 @@ import Footer from "../components/Footer.astro";
     <title>Astro</title>
   </head>
 
-  <Header />
+<Menu></Menu>
 
-  <header>
-    <Header />
-  </header>
+
   <body>
     <main></main>
 
-    <Footer /></body
-  >
+    <Footer />
+  </body>
 
   <style>
-    body {
-      margin: 20px;
-      padding: 10px;
-      background-color: rgb(27, 27, 27);
-    }
+  
 
     #logo {
       width: 20%;

@@ -1,8 +1,21 @@
-<button id="burger-menu">
-  Menu
-  <span></span>
-</button>
 
+
+
+
+<header>
+<div class="navigation_wrap">
+  <div class="logo">
+    <a href="../pages/index.astro"> <img class="logo_img" src="src/img/kune_logo.png" alt="" /></a>
+  </div>
+  <div class="date">
+    <h1>JULY</h1>
+    <h2>19-23</h2>
+  </div>
+
+  <button id="burger-menu">
+    Menu
+    <span></span>
+  </button>
 <nav id="menu">
   <ul>
     <li><a href="/"> HOME</a></li>
@@ -12,15 +25,52 @@
   </ul>
 </nav>
 
+</div>
+
+</header>
+
 <script src="../scripts/burger.js"></script>
 
 <style>
+
+  /* HEADER */
+
+  .navigation_wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+  }
+  header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    align-items: right;
+    padding-right: 2rem;
+    justify-content: space-between;
+  }
+
+
+  h1, h2 {
+    color: white;
+    font-size: 1rem;
+  
+  }
+
+  .logo_img {
+
+    width: 130px;
+  }
+
+
+/* BURGERMENU */
+
   #burger-menu {
     text-indent: -9999px;
     display: block;
     border: none;
     background: transparent;
-    margin: 30px;
+    margin: 80px;
     cursor: pointer;
     height: 27px;
     width: 27px;
@@ -117,4 +167,6 @@
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
   }
+
+
 </style>
