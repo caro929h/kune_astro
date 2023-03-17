@@ -1,7 +1,6 @@
 ---
 import Menu from "../components/Menu.astro";
-import Footer from "../components/Footer.astro";
-
+import "../styles/global.css";
 ---
 
 <html lang="en">
@@ -12,9 +11,110 @@ import Footer from "../components/Footer.astro";
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
   </head>
-  <Menu></Menu>
+  <body>
+    <Menu />
 
-  <body> </body>
+    <section class="forsidebillede">
+      <img src="src/img/orange.webp" />
+    </section>
 
+    <section class="box1">
+      <h2>ABOUT US</h2>
+      <p>
+        KUNE Festival blends art, music, and nature, offering an immersive
+        experience. The art promotes open discussions and a positive impact on
+        our worldview. The music represents the young Nordic artistic community.
+        KUNE values and celebrates the Otherness of the world, recognizing
+        diversity and promoting inclusivity. The Otherness element invites us to
+        appreciate unique perspectives and gain a more complex understanding of
+        humanity.
+      </p>
+    </section>
+    <section class="box2">
+      <h2>THE LOCATION</h2>
+      <p>
+        The island was a 19th-century defense fort, now repurposed for cultural
+        initiatives. It accommodates 2500 people, with 1000 in camping.
+        Traveling to KUNE Festival by boat adds a unique element, creating an
+        escape from everyday life. The festival's location on the island creates
+        a close-knit community, promoting social interactions impossible in
+        daily life. The island's transformation from aggression to community
+        symbolizes hope. Hosting the festival on this historic site reminds us
+        of the positive impact of art and culture, bringing people together and
+        fostering connection.
+      </p>
+    </section>
 
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <section class="instagramtekst">INSTAGRAM COMMUNITY</section>
+
+    <div class="grid_3">
+      <section class="instabox_1">
+        <img src="src/img/instapics/7.png" />
+      </section>
+
+      <section class="instabox_2">
+        <img src="src/img/instapics/6.png" />
+      </section>
+
+      <section class="instabox_3">
+        <img src="src/img/instapics/5.png" />
+      </section>
+
+      <section class="instabox_4">
+        <img src="src/img/instapics/4.png" />
+      </section>
+
+      <section class="instabox_5">
+        <img src="src/img/instapics/3.png" />
+      </section>
+
+      <section class="instabox_1">
+        <img src="src/img/instapics/2.png" />
+      </section>
+    </div>
+  </body>
+  <style>
+    .grid_3 {
+      display: grid;
+      justify-content: space-between;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h2 {
+      color: orange;
+      font-size: 2rem;
+    }
+    .instagramtekst {
+      text-align: center;
+      font-size: 4rem;
+      -webkit-text-stroke: 1px orange;
+    }
+
+    .box1 {
+      margin-top: 5%;
+      padding: 5%;
+      text-align: left;
+      margin-left: 20%;
+      margin-right: 20%;
+      border-radius: 60%;
+    }
+
+    .box2 {
+      margin-top: -5%;
+      padding: 5%;
+      text-align: left;
+      margin-left: 20%;
+      margin-right: 20%;
+      border-radius: 60%;
+    }
+
+    img {
+      width: 90%;
+    }
+    .forsidebillede {
+      width: 130%;
+    }
+  </style>
 </html>
