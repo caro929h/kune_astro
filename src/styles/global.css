@@ -3,5 +3,11 @@ nav {
 }
 
 body {
+<<<<<<< HEAD
+  margin: 20px;
+  padding: 10px;
+  background-color: rgb(27, 27, 27);
+=======
   background-color: black;
+>>>>>>> 9094907081167407ac636ee85c0c40319abd3bcc
 }
