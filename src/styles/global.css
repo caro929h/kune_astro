@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
 nav {
   text-align: center;
 }
@@ -5,7 +9,6 @@ nav {
 main {
   margin: 20px;
   padding: 10px;
-  background-color: rgb(27, 27, 27);
 }
 
 .green_img {
