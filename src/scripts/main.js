@@ -1,0 +1,1 @@
+// https://xnxgitagsngxibomplmc.supabase.co
