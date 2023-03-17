@@ -1,11 +1,12 @@
 ---
-const response = await fetch("https://kea-alt-del.dk/t7/api/products");
+const response = await fetch("");
 const data = await response.json;
 
 import Lineupcard from "../components/Lineupcard.astro";
 import Footer from "../components/Footer.astro";
 import Menu from "../components/Menu.astro";
-import Header from "../components/Header.astro";
+import "../styles/global.css";
+
 ---
 
 <html lang="en">
@@ -16,7 +17,7 @@ import Header from "../components/Header.astro";
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
   </head>
-  <Header />
+  <Menu></Menu>
   <body>
     <Menu />
     <main>
