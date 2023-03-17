@@ -6,10 +6,8 @@ import Menu from "./Menu.astro";
   <div class="logo">
     <a href="../pages/index.astro"> <img class="logo_img" src="src/img/kune_logo.png" alt="" /></a>
   </div>
-  <div>
-    <h1>KUNE</h1>
-    <h1>FESTIVAL</h1>
-    <h2>JULY 19-23</h2>
+  <div class="date">
+    <h1>KUNE FESTIVAL JULY 19-23</h1>
   </div>
   <div class="main-menu">
     <Menu />
@@ -32,11 +30,16 @@ import Menu from "./Menu.astro";
   }
 
   .logo {
-    position: absolute;
-    left: 20px;
+    /* position: absolute;
+    left: 20px; */
   }
 
   header {
-    grid-column: 1fr 1fr 1fr;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  h1 {
+    color: white;
   }
 </style>
