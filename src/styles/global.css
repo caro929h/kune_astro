@@ -3,5 +3,7 @@ nav {
 }
 
 body {
-  background-color: #11ee1e;
+  margin: 20px;
+  padding: 10px;
+  background-color: rgb(27, 27, 27);
 }
