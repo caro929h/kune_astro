@@ -1,6 +1,7 @@
 ---
 import Menu from "../components/Menu.astro";
 import "../styles/global.css";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -74,6 +75,7 @@ import "../styles/global.css";
         <img src="src/img/instapics/2.png" />
       </section>
     </div>
+    <Footer />
   </body>
   <style>
     .grid_3 {
@@ -85,13 +87,20 @@ import "../styles/global.css";
     h2 {
       color: orange;
       font-size: 2rem;
+      font-family: "Montserrat";
     }
     .instagramtekst {
       text-align: center;
       font-size: 4rem;
-      -webkit-text-stroke: 1px orange;
-    }
 
+      color: rgb(27, 27, 27);
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: orange;
+      font-family: "Montserrat";
+    }
+    p {
+      font-family: "Kanit";
+    }
     .box1 {
       margin-top: 5%;
       padding: 5%;
@@ -115,8 +124,7 @@ import "../styles/global.css";
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 100%; 
+      width: 100%;
     }
-
   </style>
 </html>
