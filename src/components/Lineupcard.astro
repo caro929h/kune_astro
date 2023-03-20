@@ -1,12 +1,39 @@
 ---
-const { title, scene, imgPath } = Astro.props;
+const { name, scene, image } = Astro.props;
 ---
 
 <article>
-  {title}
-  {scene}
-  <img src={imgPath} alt="" height="350" width="350" />
-  <slot />
+  <div>
+    <h2>{name}</h2>
+    <p>{scene}</p>
+    <img src={image} alt="profilbillede" />
+  </div>
 </article>
 
-<script src="../scripts/main.js"></script>
+<style>
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  h2 {
+    font-family: "Montserrat";
+  }
+  p {
+    font-family: "Montserrat";
+  }
+  article {
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: var(--brandbg);
+    color: white;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  div {
+    padding-left: 1em;
+  }
+</style>
