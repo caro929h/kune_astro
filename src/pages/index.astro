@@ -17,36 +17,37 @@ import "../styles/global.css";
   <body>
     <Menu />
     <main>
-      <img src="src/img/greenkune.webp" alt="">
+      <img src="src/img/greenkune.webp" alt="" />
       <h1 class="center">Countdown til KUNE Festival</h1>
-      <p id="demo"></p> 
-    
+      <p id="demo"></p>
     </main>
     <Footer />
   </body>
 
-   
   <script>
     // Sæt datoen der tælles ned til
     const countDownDate = new Date("Jul 19, 2023 10:00:00").getTime();
-  
+
     // Opdater hver sekund
     const x = setInterval(function () {
       // Get today's date and time
       const now = new Date().getTime();
-  
+
       // Find differencen mellem datoen og nu
       const distance = countDownDate - now;
-  
+
       // Tæller for dage, timer, minutter og sekunder
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
+
       // Resultat i element med id "demo"
-      document.getElementById("demo").innerHTML = days + "D " + hours + "H " + minutes + "M " + seconds + "S ";
-  
+      document.getElementById("demo").innerHTML =
+        days + "D " + hours + "H " + minutes + "M " + seconds + "S ";
+
       // hvis nedtælling går i 0
       if (distance < 0) {
         clearInterval(x);
@@ -64,20 +65,22 @@ import "../styles/global.css";
       font-size: 6rem;
       text-align: center;
       color: rgb(27, 27, 27);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white; 
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: white;
+      font-family: "Montserrat";
     }
 
     h1,
     h2 {
       color: white;
+      font-family: "Montserrat";
     }
 
     img {
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 100%; 
+      width: 100%;
     }
 
     .center {

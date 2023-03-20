@@ -19,6 +19,15 @@ img {
   width: 100%;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Kanit";
+  src: url("/fonts/Kanit-Medium.woff2") format("woff2");
+}
 /*
 main {
   margin: 20px;
