@@ -1,35 +1,37 @@
 ---
-const response = await fetch("");
-const data = await response.json;
+const url = "https://xnxgitagsngxibomplmc.supabase.co/rest/v1/KUNE?select=name,date,scene,image";
+const options = {
+  headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhueGdpdGFnc25neGlib21wbG1jIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzkwNTMyNjcsImV4cCI6MTk5NDYyOTI2N30.AJfZquFwCqKVXMLFNHaxoi_zanrT7MVwiRwzsAfVyFU",
+  },
+};
+const response = await fetch(url, options);
+const data = await response.json();
 
+import Layouts from "../layouts/Layouts.astro";
 import Lineupcard from "../components/Lineupcard.astro";
 import Footer from "../components/Footer.astro";
 import Menu from "../components/Menu.astro";
 import "../styles/global.css";
-
+import "../styles/lineup.css";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <Menu></Menu>
-  <body>
-    <Menu />
-    <main>
-      <h1>Kune Line up</h1>
-      <Lineupcard imgPath="https://api.lorem.space/image/album?w=350&h=350&hash=9D9539E7" title="Parallax Deep" scene="SPACE STAGE" />
-      <Lineupcard imgPath="https://api.lorem.space/image/album?w=350&h=350&hash=9D9539E7" title="Parallax Deep" scene="SPACE STAGE" />
-      <Lineupcard imgPath="https://api.lorem.space/image/album?w=350&h=350&hash=9D9539E7" title="Parallax Deep" scene="SPACE STAGE" />
-      <Lineupcard imgPath="https://api.lorem.space/image/album?w=350&h=350&hash=9D9539E7" title="Parallax Deep" scene="SPACE STAGE" />
-      <Lineupcard imgPath="https://api.lorem.space/image/album?w=350&h=350&hash=9D9539E7" title="Parallax Deep" scene="SPACE STAGE" />
-      <Lineupcard imgPath="https://api.lorem.space/image/album?w=350&h=350&hash=9D9539E7" title="Parallax Deep" scene="SPACE STAGE" />
-      <Lineupcard imgPath="https://api.lorem.space/image/album?w=350&h=350&hash=9D9539E7" title="Parallax Deep" scene="SPACE STAGE" />
-      <Lineupcard imgPath="https://api.lorem.space/image/album?w=350&h=350&hash=9D9539E7" title="Parallax Deep" scene="SPACE STAGE" />
-    </main>
-  </body>
-</html>
+<Layouts title="Medlemsliste">
+  <main>
+    {data.map((person) => <Lineupcard image={`../img/lineupimg${person.image}`} name={person.name} scene={person.scene} />)}
+  </main>
+</Layouts>
+
+<style>
+  main {
+    display: grid;
+    gap: 1em;
+    padding: 1em;
+  }
+  @media screen and (min-width: 600px) {
+    main {
+      grid-template-columns: repeat(auto-fit, 350px);
+      justify-content: center;
+    }
+  }
+</style>

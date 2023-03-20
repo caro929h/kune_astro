@@ -1,17 +1,30 @@
 ---
-export async function getStaticPaths() {
-  const data = await fetch("...").then((response) => response.json());
+import Layouts from "../layouts/Layouts.astro";
+//import { Debug } from "astro/components";
+const { personID } = Astro.params;
 
-  return data.map((onePost) => {
-    return {
-      params: { id: onePost.id },
-      props: { post: onePost },
-    };
-  });
+export let data;
+
+export async function getStaticPaths() {
+  const url = `https://xnxgitagsngxibomplmc.supabase.co/rest/v1/KUNE?select=name,date,scene,image`;
+  const options = {
+    headers: {
+      apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhueGdpdGFnc25neGlib21wbG1jIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzkwNTMyNjcsImV4cCI6MTk5NDYyOTI2N30.AJfZquFwCqKVXMLFNHaxoi_zanrT7MVwiRwzsAfVyFU",
+    },
+  };
+  const response = await fetch(url, options);
+  data = await response.json();
+  return data.map((person) => ({ params: { personID: person.id } }));
 }
 
-//const { id } = Astro.params;
-const { post } = Astro.props;
+const dennePerson = data.find((person) => person.id == personID);
 ---
 
-<h1>{post.name}</h1>
+<!-- <Debug {dennePerson} /> -->
+<Layouts title={dennePerson.id}>
+  <main>
+    <h2>{dennePerson.name}</h2>
+    <p>{dennePerson.scene}</p>
+    <img src={`../img/lineupimg${dennePerson.image}`} alt="profilbillede" />
+  </main>
+</Layouts>
