@@ -1,45 +1,38 @@
-
-
-
-
 <header>
-<div class="navigation_wrap">
-  <div class="logo">
-    <a href="../pages/index.astro"> <img class="logo_img" src="src/img/kune_logo.png" alt="" /></a>
+  <div class="navigation_wrap">
+    <div class="logo">
+      <a href="/">
+        <img class="logo_img" src="src/img/kune_logo.png" alt="" /></a
+      >
+    </div>
+    <div class="date">
+      <h1>JULY 19-23</h1>
+    </div>
+
+    <button id="burger-menu">
+      Menu
+      <span></span>
+    </button>
+    <nav id="menu">
+      <ul>
+        <li><a href="/"> HOME</a></li>
+        <li><a href="/lineup"> LINEUP</a></li>
+        <li><a href="/camping"> CAMPING</a></li>
+        <li><a href="/about"> ABOUT</a></li>
+      </ul>
+    </nav>
   </div>
-  <div class="date">
-    <h1>JULY</h1>
-    <h2>19-23</h2>
-  </div>
-
-  <button id="burger-menu">
-    Menu
-    <span></span>
-  </button>
-<nav id="menu">
-  <ul>
-    <li><a href="/"> HOME</a></li>
-    <li><a href="/lineup"> LINEUP</a></li>
-    <li><a href="/product"> PRODUCTS</a></li>
-    <li><a href="/about"> ABOUT</a></li>
-  </ul>
-</nav>
-
-</div>
-
 </header>
 
 <script src="../scripts/burger.js"></script>
 
 <style>
-
   /* HEADER */
 
-  .navigation_wrap{
+  .navigation_wrap {
     position: relative;
     display: flex;
     align-items: center;
-
   }
   header {
     display: flex;
@@ -50,32 +43,33 @@
     justify-content: space-between;
   }
 
-
-  h1, h2 {
+  h1,
+  h2, 
+  h3 {
     color: white;
     font-size: 1rem;
-  
+    font-family: "Montserrat";
+    
   }
 
-  .logo_img {
 
+  .logo_img {
     width: 130px;
   }
 
-
-/* BURGERMENU */
+  /* BURGERMENU */
 
   #burger-menu {
     text-indent: -9999px;
     display: block;
     border: none;
     background: transparent;
-    margin: 80px;
+    margin: 60px;
     cursor: pointer;
     height: 27px;
     width: 27px;
-    position: fixed;
     z-index: 2;
+    position: fixed;
     top: 0px;
     right: 30px;
   }
@@ -157,9 +151,13 @@
   #menu a {
     color: #fff;
     display: block;
-    font-size: 55px;
+    font-size: 300%;
     margin-bottom: 30px;
     text-decoration: none;
+    font-family: "Montserrat";
+    text-align: right;
+    padding-right: 33.5%;
+    padding-top: 2%;
   }
 
   #menu a:hover {
@@ -168,5 +166,5 @@
     -webkit-text-stroke-color: white;
   }
 
-
+  
 </style>
