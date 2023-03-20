@@ -3,10 +3,10 @@ const { name, scene, image } = Astro.props;
 ---
 
 <article>
-  <img src={image} alt="profilbillede" />
   <div>
     <h2>{name}</h2>
     <p>{scene}</p>
+    <img src={image} alt="profilbillede" />
   </div>
 </article>
 
@@ -14,6 +14,12 @@ const { name, scene, image } = Astro.props;
   a {
     text-decoration: none;
     color: inherit;
+  }
+  h2 {
+    font-family: "Montserrat";
+  }
+  p {
+    font-family: "Montserrat";
   }
   article {
     border-radius: 1em;
