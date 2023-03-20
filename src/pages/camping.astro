@@ -18,14 +18,43 @@ import "../styles/global.css";
   <body>
     <img src="src/img/blue.webp" alt="" />
 
+  <div class="gap">
     <h1>GET YOUR TICKET</h1>
+    <div class="ticket">
+      <img src="src/img/camping/ticket_full.webp" alt="">
+      <img src="src/img/camping/ticket_three.webp" alt="">
+      <img src="src/img/camping/ticket_one.webp" alt="">
+    </div>
 
     <h1>CHOOSE YOUR CAMPING SPOT</h1>
+    <div class="ticket">
+      <img src="src/img/camping/camping_tent.webp" alt="">
+      <img src="src/img/camping/camping_boat.webp" alt="">
+      <img src="src/img/camping/camping_indoor.webp" alt="">
+    </div>
+  </div>
   </body>
 </html>
 
 
 <style>
 
-  
+  .gap{
+    padding: 20px;
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+  }
+
+.ticket {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 70%;
+  gap: 30px;
+
+}
+
+
 </style>
