@@ -13,48 +13,70 @@ import "../styles/global.css";
     <title>Astro</title>
   </head>
 
-  <Menu></Menu>
+  <Menu />
 
   <body>
     <img src="src/img/blue.webp" alt="" />
 
-  <div class="gap">
-    <h1>GET YOUR TICKET</h1>
-    <div class="ticket">
-      <img src="src/img/camping/ticket_full.webp" alt="">
-      <img src="src/img/camping/ticket_three.webp" alt="">
-      <img src="src/img/camping/ticket_one.webp" alt="">
-    </div>
+    <div class="gap">
+      <h1>GET YOUR TICKET</h1>
+      <div class="ticket">
+        <img src="src/img/camping/ticket_full.webp" alt="" />
+        <img src="src/img/camping/ticket_three.webp" alt="" />
+        <img src="src/img/camping/ticket_one.webp" alt="" />
+      </div>
+      <br />
+      <br />
+      <br />
+      <button class="button"> BUY TICKET HERE</button>
 
-    <h1>CHOOSE YOUR CAMPING SPOT</h1>
-    <div class="ticket">
-      <img src="src/img/camping/camping_tent.webp" alt="">
-      <img src="src/img/camping/camping_boat.webp" alt="">
-      <img src="src/img/camping/camping_indoor.webp" alt="">
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <h1>CHOOSE YOUR CAMPING SPOT</h1>
+      <div class="ticket">
+        <img src="src/img/camping/camping_tent.webp" alt="" />
+        <img src="src/img/camping/camping_boat.webp" alt="" />
+        <img src="src/img/camping/camping_indoor.webp" alt="" />
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <button class="button"> BUY CAMPING HERE</button>
     </div>
-  </div>
   </body>
+
+  <style>
+    .gap {
+      padding: 30px;
+      margin: 30px;
+      display: block;
+
+      align-content: center;
+    }
+
+    .ticket {
+      display: flex;
+      justify-content: space-between;
+      gap: 100px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      margin-top: 40px;
+      padding-top: 40px;
+      color: #97dff4;
+    }
+
+    .button {
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
 </html>
-
-
-<style>
-
-  .gap{
-    padding: 20px;
-    margin: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
-  }
-
-.ticket {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 70%;
-  gap: 30px;
-
-}
-
-
-</style>
