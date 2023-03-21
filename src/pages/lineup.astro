@@ -16,6 +16,8 @@ import "../styles/global.css";
 import "../styles/lineup.css";
 ---
 
+<img src="/img/pink.webp" alt="" />
+
 <Layouts title="Medlemsliste">
   <main>
     {data.map((person) => <Lineupcard image={`/img/lineupimg/${person.image}`} name={person.name} scene={person.scene} />)}
