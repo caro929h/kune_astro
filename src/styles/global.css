@@ -3,6 +3,9 @@ body {
   background-color: rgb(27, 27, 27);
   color: white;
 }
+.spacer {
+  margin-top: 140px;
+}
 nav {
   text-align: center;
 }
