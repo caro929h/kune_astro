@@ -41,8 +41,14 @@ import "../styles/global.css";
         </div>
       </div>
       <div class="smaabilleder">
-        <img class="aboutbillede" src="src/img/smaabilleder/about.PNG" alt="">
-        <img class="campingbillede" src="src/img/smaabilleder/camping.PNG" alt="">
+         <div class="about">
+          <img class="aboutbillede" src="src/img/smaabilleder/about.PNG" alt="">
+          <div class="centeredabout">About</div>
+        </div> 
+        <div class="camping">
+         <img class="campingbillede" src="src/img/smaabilleder/camping.PNG" alt="">
+         <div class="centeredcamping">Camping</div>
+       </div>
         <img class="lineupbillede" src="src/img/smaabilleder/lineup.PNG" alt="">
         <img class="voluenteerbillede" src="src/img/smaabilleder/voluenteer.PNG" alt="">
       </div>
@@ -204,7 +210,21 @@ import "../styles/global.css";
   padding: 10px;
 }
 
-.aboutbillede, .lineupbillede, .campingbillede .voluenteerbillede {
+
+/* Centered tekst på små billeder */
+.centeredabout,  .centeredcamping {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about, .camping {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 2rem;
 }
 
     @media (max-width: 700px) {
