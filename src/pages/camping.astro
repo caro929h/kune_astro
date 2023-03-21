@@ -2,6 +2,8 @@
 import Layouts from "../layouts/Layouts.astro";
 import Menu from "../components/Menu.astro";
 import "../styles/global.css";
+
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -49,12 +51,13 @@ import "../styles/global.css";
     </div>
   </body>
 
+  <Footer />
+
   <style>
     .gap {
       padding: 30px;
       margin: 30px;
       display: block;
-
       align-content: center;
     }
 
@@ -72,11 +75,25 @@ import "../styles/global.css";
       margin-top: 40px;
       padding-top: 40px;
       color: #97dff4;
+      font-family: "Montserrat";
     }
 
     .button {
-      padding: 10px;
-      margin: 10px;
+      padding: 15px 25px;
+      background-color: #97dff4;
+      color: black;
+      display: inline-block;
+      margin-top: 20px;
+      border-radius: 5px;
+      font-family: "Montserrat";
+    }
+
+    @media (max-width: 700px) {
+      .ticket {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 60%;
+      }
     }
   </style>
 </html>
