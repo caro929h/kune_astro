@@ -43,17 +43,20 @@ import "../styles/global.css";
       <div class="smaabilleder">
          <div class="about">
           <img class="aboutbillede" src="src/img/smaabilleder/about.PNG" alt="">
-          <a class="centeredabout" href="about.astro"> ABOUT </a>
+          <a class="centeredabout" href="/about"> ABOUT </a>
         </div> 
         <div class="camping">
          <img class="campingbillede" src="src/img/smaabilleder/camping.PNG" alt="">
-         <a class="centeredcamping" href="camping.astro"> CAMPING </a>
+         <a class="centeredcamping" href="/camping"> CAMPING </a>
        </div>
         <div class="lineup">
          <img class="lineupbillede" src="src/img/smaabilleder/lineup.PNG" alt="">
-         <a class="centeredlineup" href="lineup.astro"> LINE UP </a>
+         <a class="centeredlineup" href="/lineup"> LINE UP </a>
        </div>
+       <div class="voluenteer">
         <img class="voluenteerbillede" src="src/img/smaabilleder/voluenteer.PNG" alt="">
+        <a class="centeredvoluenteer" href="/about"> VOLUENTEER </a>
+      </div>
       </div>
       <div>
 
@@ -216,19 +219,20 @@ import "../styles/global.css";
 
 
 /* Centered tekst på små billeder */
-.centeredabout,  .centeredcamping {
+.centeredabout,  .centeredcamping, .centeredlineup, .centeredvoluenteer {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.about, .camping {
+.about, .camping, .lineup, .voluenteer {
   position: relative;
   text-align: center;
   color: white;
   font-family: "Montserrat";
   font-size: 2rem;
+  text-decoration: none;
 }
 
     @media (max-width: 700px) {
