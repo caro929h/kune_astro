@@ -18,7 +18,7 @@ import "../styles/lineup.css";
 
 <Layouts title="Medlemsliste">
   <main>
-    {data.map((person) => <Lineupcard image={`../img/lineupimg${person.image}`} name={person.name} scene={person.scene} />)}
+    {data.map((person) => <Lineupcard image={`/img/lineupimg/${person.image}`} name={person.name} scene={person.scene} />)}
   </main>
 </Layouts>
 
