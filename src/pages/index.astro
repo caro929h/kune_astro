@@ -40,6 +40,18 @@ import "../styles/global.css";
           </p>
         </div>
       </div>
+      <div class="smaabilleder">
+        <img class="aboutbillede" src="src/img/smaabilleder/about.PNG" alt="">
+        <img class="campingbillede" src="src/img/smaabilleder/camping.PNG" alt="">
+        <img class="lineupbillede" src="src/img/smaabilleder/lineup.PNG" alt="">
+        <img class="voluenteerbillede" src="src/img/smaabilleder/voluenteer.PNG" alt="">
+      </div>
+      <div>
+        <br>
+<br><br>
+<br><br>
+<b></b>
+      </div>
 
     </main>
     <Footer />
@@ -183,6 +195,16 @@ import "../styles/global.css";
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
+}
+
+.smaabilleder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 10px;
+  padding: 10px;
+}
+
+.aboutbillede, .lineupbillede, .campingbillede .voluenteerbillede {
 }
 
     @media (max-width: 700px) {
