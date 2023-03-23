@@ -9,3 +9,32 @@
   height: 100%;
 }
  */
+
+.knap1 {
+  padding: 11px 70px;
+  color: #e911b3;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 50px;
+  font-family: "Montserrat";
+  font-size: 1.7rem;
+  border: 4px solid rgb(255, 0, 187);
+}
+
+.knap {
+  padding: 11px 70px;
+  background-color: #1e1e1e;
+  color: #e911b3;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 50px;
+  font-family: "Montserrat";
+  font-size: 1.7rem;
+}
+
+.datoknapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  margin-top: 50px;
+}

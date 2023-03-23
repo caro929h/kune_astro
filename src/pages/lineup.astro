@@ -19,6 +19,18 @@ import "../styles/lineup.css";
 <div class="spacer"></div>
 <img src="/img/pink.webp" alt="" />
 
+<div class="datoknapper">
+  <div>
+    <p class="knap1">FRI 9/07</p>
+  </div>
+  <div>
+    <p class="knap">SAT 10/07</p>
+  </div>
+  <div>
+    <p class="knap">SUN 11/07</p>
+  </div>
+</div>
+
 <Layouts title="Medlemsliste">
   <main>
     {data.map((person) => <Lineupcard image={`/img/lineupimg/${person.image}`} name={person.name} scene={person.scene} />)}
